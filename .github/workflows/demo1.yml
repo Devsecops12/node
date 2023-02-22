@@ -12,7 +12,7 @@ jobs:
         uses: actions/cache@v3.2.6
         with:
          path: ~/.npm
-         key: nodemodule-${{ hashFiles('**/package-lock.json') }}
+         key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         run: npm ci
       - name: Test code
