@@ -1,11 +1,11 @@
 name: Events Demo 1
-on: ...
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Output event data
-        run: echo "${{ toJSON(github.event) }}"
+#       - name: Output event data
+#         run: echo "${{ toJSON(github.event) }}"
       - name: Get code
         uses: actions/checkout@v3
       - name: Install dependencies
